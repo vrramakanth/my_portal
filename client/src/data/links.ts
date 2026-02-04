@@ -9,8 +9,8 @@ export interface SocialLink {
 }
 
 export const userData = {
-  name: "Alex Creator",
-  handle: "@alexcreates",
+  name: "Ramakanth",
+  handle: "@ramakanth",
   bio: "Digital Artist & Developer 🎨 \nCreating beautiful things on the web. \nBased in San Francisco.",
   avatar: "avatar.png", // Will handle import in component
   links: [
