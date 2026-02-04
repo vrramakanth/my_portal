@@ -9,64 +9,36 @@ export interface SocialLink {
 }
 
 export const userData = {
-  name: "Ramakanth",
-  handle: "@ramakanth",
-  bio: "Digital Artist & Developer 🎨 \nCreating beautiful things on the web. \nBased in San Francisco.",
+  name: "Ramakanth V R",
+  handle: "@vrramakanth",
+  bio: "Senior Engineering Leader @ State Street \n20+ Years in Digital Transformation & Medical Imaging \nUS Patent Holder | XLRI Alum",
   avatar: "avatar.png", // Will handle import in component
   links: [
     {
+      id: "linkedin",
+      label: "Connect on LinkedIn",
+      url: "https://www.linkedin.com/in/vrramakanth/",
+      icon: Linkedin,
+      color: "bg-blue-700"
+    },
+    {
       id: "portfolio",
-      label: "My Portfolio",
+      label: "Professional Portfolio",
       url: "https://example.com",
       icon: Globe,
       color: "bg-blue-500"
     },
     {
-      id: "twitter",
-      label: "Twitter / X",
-      url: "https://twitter.com",
-      icon: Twitter,
-      color: "bg-sky-500"
-    },
-    {
-      id: "instagram",
-      label: "Instagram",
-      url: "https://instagram.com",
-      icon: Instagram,
-      color: "bg-pink-500"
-    },
-    {
-      id: "youtube",
-      label: "YouTube Channel",
-      url: "https://youtube.com",
-      icon: Youtube,
-      color: "bg-red-600"
-    },
-    {
-      id: "linkedin",
-      label: "LinkedIn",
-      url: "https://linkedin.com",
-      icon: Linkedin,
-      color: "bg-blue-700"
-    },
-    {
       id: "github",
-      label: "GitHub",
-      url: "https://github.com",
+      label: "GitHub Projects",
+      url: "https://github.com/ramakanthv",
       icon: Github,
       color: "bg-neutral-800"
     },
     {
-      id: "spotify",
-      label: "My Lo-Fi Playlist",
-      url: "https://spotify.com",
-      icon: Music,
-      color: "bg-green-500"
-    },
-    {
       id: "email",
-      label: "Contact Me",
-      url: "mailto:alex@example.com",
+      label: "Get in Touch",
+      url: "mailto:ramakanth@example.com",
       icon: Mail,
       color: "bg-purple-600"
     }
