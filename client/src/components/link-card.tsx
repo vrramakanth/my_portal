@@ -23,7 +23,7 @@ export function LinkCard({ link, index }: LinkCardProps) {
     >
       {/* Hover Background Color Splash */}
       <div 
-        className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 ${link.color || 'bg-primary'}`} 
+        className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 ${link.color?.startsWith('bg-gradient') ? link.color : (link.color || 'bg-primary')}`} 
       />
       
       {/* Icon Container */}

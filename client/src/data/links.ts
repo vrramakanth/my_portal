@@ -22,6 +22,27 @@ export const userData = {
       color: "bg-blue-700"
     },
     {
+      id: "twitter",
+      label: "Twitter / X",
+      url: "https://twitter.com/vrramakanth",
+      icon: Twitter,
+      color: "bg-black"
+    },
+    {
+      id: "instagram",
+      label: "Instagram",
+      url: "https://instagram.com/vrramakanth",
+      icon: Instagram,
+      color: "bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600"
+    },
+    {
+      id: "facebook",
+      label: "Facebook",
+      url: "https://facebook.com/vrramakanth",
+      icon: Globe, // Facebook icon not in current imports, using Globe as placeholder or I should check Lucide
+      color: "bg-blue-600"
+    },
+    {
       id: "portfolio",
       label: "Professional Portfolio",
       url: "https://example.com",
