@@ -43,13 +43,6 @@ export const userData = {
       color: "bg-blue-600"
     },
     {
-      id: "portfolio",
-      label: "Professional Portfolio",
-      url: "https://example.com",
-      icon: Globe,
-      color: "bg-blue-500"
-    },
-    {
       id: "github",
       label: "GitHub Projects",
       url: "https://github.com/ramakanthv",
@@ -66,7 +59,7 @@ export const userData = {
     {
       id: "email",
       label: "Get in Touch",
-      url: "mailto:ramakanth@example.com",
+      url: "mailto:vrramakanth@gmail.com",
       icon: Mail,
       color: "bg-purple-600"
     }
