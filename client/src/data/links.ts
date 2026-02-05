@@ -1,4 +1,4 @@
-import { Github, Twitter, Instagram, Linkedin, Globe, Mail, Youtube, Music } from "lucide-react";
+import { Github, Twitter, Instagram, Linkedin, Globe, Mail, Youtube, Music, MessageCircle, Facebook } from "lucide-react";
 
 export interface SocialLink {
   id: string;
@@ -24,22 +24,22 @@ export const userData = {
     {
       id: "twitter",
       label: "Twitter / X",
-      url: "https://twitter.com/vrramakanth",
+      url: "https://x.com/Ramakanthvanga1",
       icon: Twitter,
       color: "bg-black"
     },
     {
       id: "instagram",
       label: "Instagram",
-      url: "https://instagram.com/vrramakanth",
+      url: "https://www.instagram.com/vrramakanth/",
       icon: Instagram,
       color: "bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600"
     },
     {
       id: "facebook",
       label: "Facebook",
-      url: "https://facebook.com/vrramakanth",
-      icon: Globe, // Facebook icon not in current imports, using Globe as placeholder or I should check Lucide
+      url: "https://www.facebook.com/vrramakanth",
+      icon: Facebook,
       color: "bg-blue-600"
     },
     {
@@ -55,6 +55,13 @@ export const userData = {
       url: "https://github.com/ramakanthv",
       icon: Github,
       color: "bg-neutral-800"
+    },
+    {
+      id: "whatsapp",
+      label: "WhatsApp Me",
+      url: "https://wa.me/99880766321",
+      icon: MessageCircle,
+      color: "bg-green-500"
     },
     {
       id: "email",
