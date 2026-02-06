@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import avatarImage from "../assets/images/avatar.png";
+import profileImage from "../assets/images/profile.jpg";
 
 interface ProfileCardProps {
   name: string;
@@ -18,7 +18,7 @@ export function ProfileCard({ name, handle, bio }: ProfileCardProps) {
       <div className="relative mb-4 group cursor-pointer">
         <div className="absolute inset-0 bg-gradient-to-tr from-violet-500 to-orange-300 rounded-full blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
         <img 
-          src={avatarImage} 
+          src={profileImage} 
           alt={name}
           className="relative w-32 h-32 rounded-full object-cover border-4 border-white/80 shadow-xl" 
         />

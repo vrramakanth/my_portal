@@ -11,8 +11,8 @@ export interface SocialLink {
 export const userData = {
   name: "Ramakanth V R",
   handle: "@vrramakanth",
-  bio: "Senior Engineering Leader @ State Street \n20+ Years in Digital Transformation & Medical Imaging \nUS Patent Holder | XLRI Alum",
-  avatar: "avatar.png", // Will handle import in component
+  bio: "Strong views | Digital change | Long-term stewardship",
+  avatar: "profile.jpg", // Updated to the new profile picture
   links: [
     {
       id: "linkedin",
@@ -43,16 +43,9 @@ export const userData = {
       color: "bg-blue-600"
     },
     {
-      id: "github",
-      label: "GitHub Projects",
-      url: "https://github.com/ramakanthv",
-      icon: Github,
-      color: "bg-neutral-800"
-    },
-    {
       id: "whatsapp",
       label: "WhatsApp Me",
-      url: "https://wa.me/99880766321",
+      url: "https://wa.me/919880766321",
       icon: MessageCircle,
       color: "bg-green-500"
     },
