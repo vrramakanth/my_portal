@@ -30,6 +30,18 @@ export default function Home() {
           ))}
         </motion.div>
 
+        {userData.aboutMe && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8 }}
+            className="mt-12 p-6 glass-panel rounded-2xl text-gray-700 leading-relaxed text-sm"
+          >
+            <h3 className="text-gray-900 font-bold mb-2 uppercase tracking-wider text-xs">About Me</h3>
+            {userData.aboutMe}
+          </motion.div>
+        )}
+
         <motion.footer
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

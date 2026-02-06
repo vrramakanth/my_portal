@@ -11,7 +11,8 @@ export interface SocialLink {
 export const userData = {
   name: "Ramakanth V R",
   handle: "@vrramakanth",
-  bio: "Strong views | Digital change | Long-term stewardship",
+  bio: "Strong Views | Digital Change | Long-term StewardShip",
+  aboutMe: "Senior engineering leader with 20+ years of experience in Digital Transformation and software development. US Patent holder for innovative healthcare applications and a passionate advocate for patient-centric innovation.",
   avatar: "profile.jpg", // Updated to the new profile picture
   links: [
     {
