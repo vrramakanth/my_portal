@@ -17,6 +17,22 @@ export default function Home() {
           bio={userData.bio}
         />
 
+        {userData.aboutMe && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="mb-8 p-6 glass-panel rounded-2xl text-gray-700 leading-relaxed text-sm border-white/40 shadow-xl"
+          >
+            <h3 className="text-gray-900 font-bold mb-3 uppercase tracking-wider text-xs border-b border-white/20 pb-2">About Me</h3>
+            <div className="space-y-4">
+              {userData.aboutMe.split('\n\n').map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
         <motion.div 
           className="flex flex-col space-y-1"
           initial="hidden"
@@ -29,18 +45,6 @@ export default function Home() {
             <LinkCard key={link.id} link={link} index={index} />
           ))}
         </motion.div>
-
-        {userData.aboutMe && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
-            className="mt-12 p-6 glass-panel rounded-2xl text-gray-700 leading-relaxed text-sm"
-          >
-            <h3 className="text-gray-900 font-bold mb-2 uppercase tracking-wider text-xs">About Me</h3>
-            {userData.aboutMe}
-          </motion.div>
-        )}
 
         <motion.footer
           initial={{ opacity: 0 }}
