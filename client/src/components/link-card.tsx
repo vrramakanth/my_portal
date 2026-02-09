@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 import { SocialLink } from "../data/links";
 
 interface LinkCardProps {
@@ -9,18 +10,8 @@ interface LinkCardProps {
 export function LinkCard({ link, index }: LinkCardProps) {
   const Icon = link.icon;
 
-  return (
-    <motion.a
-      href={link.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: index * 0.05 + 0.2 }}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      className="group relative flex items-center p-4 mb-3 w-full bg-white/60 backdrop-blur-md border border-white/40 rounded-2xl shadow-sm hover:shadow-lg hover:bg-white/80 transition-all duration-300 overflow-hidden"
-    >
+  const content = (
+    <>
       {/* Hover Background Color Splash */}
       <div 
         className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 ${link.color?.startsWith('bg-gradient') ? link.color : (link.color || 'bg-primary')}`} 
@@ -42,6 +33,40 @@ export function LinkCard({ link, index }: LinkCardProps) {
           <path d="M7 17l9.2-9.2M17 17V7H7" />
         </svg>
       </div>
+    </>
+  );
+
+  const className = "group relative flex items-center p-4 mb-3 w-full bg-white/60 backdrop-blur-md border border-white/40 rounded-2xl shadow-sm hover:shadow-lg hover:bg-white/80 transition-all duration-300 overflow-hidden";
+
+  if (link.isInternal) {
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: index * 0.05 + 0.2 }}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+      >
+        <Link href={link.url} className={className}>
+          {content}
+        </Link>
+      </motion.div>
+    );
+  }
+
+  return (
+    <motion.a
+      href={link.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, delay: index * 0.05 + 0.2 }}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      className={className}
+    >
+      {content}
     </motion.a>
   );
 }
