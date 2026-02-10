@@ -32,11 +32,11 @@ export const userData = {
       color: "bg-blue-700"
     },
     {
-      id: "twitter",
-      label: "Twitter / X",
-      url: "https://x.com/Ramakanthvanga1",
-      icon: Twitter,
-      color: "bg-black"
+      id: "facebook",
+      label: "Facebook",
+      url: "https://www.facebook.com/vrramakanth",
+      icon: Facebook,
+      color: "bg-blue-600"
     },
     {
       id: "instagram",
@@ -46,11 +46,11 @@ export const userData = {
       color: "bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600"
     },
     {
-      id: "facebook",
-      label: "Facebook",
-      url: "https://www.facebook.com/vrramakanth",
-      icon: Facebook,
-      color: "bg-blue-600"
+      id: "twitter",
+      label: "Twitter / X",
+      url: "https://x.com/Ramakanthvanga1",
+      icon: Twitter,
+      color: "bg-black"
     },
     {
       id: "whatsapp",
