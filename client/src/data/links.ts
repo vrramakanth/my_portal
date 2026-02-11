@@ -53,6 +53,55 @@ export const userData = {
       color: "bg-black"
     },
     {
+      id: "talk-ai",
+      label: "Talk on Thriving in the Age of AI",
+      url: "https://alumni.srivishnu.edu.in/newsroom/news/Talk-on-Thriving-in-the-Age-of-AI-by-BVRIT-Alumnus-Mr-Ramakanth-V-R",
+      icon: Youtube,
+      color: "bg-red-500"
+    },
+    {
+      id: "youtube-1",
+      label: "Watch on YouTube (Session 1)",
+      url: "https://youtu.be/b8f_KQBu5p8?si=hORA5ly3cYSq753U",
+      icon: Youtube,
+      color: "bg-red-600"
+    },
+    {
+      id: "youtube-2",
+      label: "Watch on YouTube (Session 2)",
+      url: "https://youtu.be/aDK61PGKdY?si=6dY5OFuruwtRNUKr",
+      icon: Youtube,
+      color: "bg-red-600"
+    },
+    {
+      id: "youtube-3",
+      label: "Watch on YouTube (Session 3)",
+      url: "https://youtu.be/MqDwm5mUWGU?si=KqLYFUtm1ZxwtcOQ",
+      icon: Youtube,
+      color: "bg-red-600"
+    },
+    {
+      id: "patents",
+      label: "View Patents & Assignments",
+      url: "https://assignmentcenter.uspto.gov/search/patent/assigneeAssignorDetails%3FexactAssignorName%3DRANGA,%20RAMAKANTH%20VENGETA",
+      icon: Globe,
+      color: "bg-blue-600"
+    },
+    {
+      id: "credly",
+      label: "My Professional Certifications",
+      url: "https://www.credly.com/users/ramakanth-vr/badges",
+      icon: Globe,
+      color: "bg-orange-500"
+    },
+    {
+      id: "governing-body",
+      label: "BVRIT Governing Body Profile",
+      url: "https://bvrit.ac.in/governing-body/?fbclid=IwAR0OouuLeFWW5I-67AdYMbWf2DXyEElSArzN4yAHvvPbFXvvUgUzO-",
+      icon: User,
+      color: "bg-emerald-600"
+    },
+    {
       id: "whatsapp",
       label: "WhatsApp Me",
       url: "https://wa.me/919880766321",
