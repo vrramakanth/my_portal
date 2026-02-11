@@ -2,7 +2,7 @@ import { userData } from "@/data/links";
 import { ProfileCard } from "@/components/profile-card";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowLeft, Youtube, ExternalLink } from "lucide-react";
+import { ArrowLeft, Youtube, ExternalLink, Award, Landmark } from "lucide-react";
 
 export default function About() {
   const mediaLinks = [
@@ -21,6 +21,23 @@ export default function About() {
     {
       label: "Watch on YouTube (Session 3)",
       url: "https://youtu.be/MqDwm5mUWGU?si=KqLYFUtm1ZxwtcOQ"
+    }
+  ];
+
+  const professionalLinks = [
+    {
+      label: "My Professional Certifications",
+      url: "https://www.credly.com/users/ramakanth-vr/badges",
+      icon: Award,
+      color: "text-orange-500",
+      bg: "bg-orange-50"
+    },
+    {
+      label: "BVRIT Governing Body Profile",
+      url: "https://bvrit.ac.in/governing-body/?fbclid=IwAR0OouuLeFWW5I-67AdYMbWf2DXyEElSArzN4yAHvvPbFXvvUgUzO-",
+      icon: Landmark,
+      color: "text-emerald-600",
+      bg: "bg-emerald-50"
     }
   ];
 
@@ -60,6 +77,36 @@ export default function About() {
           <div className="space-y-6">
             {userData.aboutMe.split('\n\n').map((para, i) => (
               <p key={i} className="text-base text-gray-700 leading-relaxed">{para}</p>
+            ))}
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="mt-8 p-6 glass-panel rounded-3xl border-white/40 shadow-xl"
+        >
+          <h3 className="text-gray-900 font-bold mb-6 uppercase tracking-wider text-xs border-b border-white/20 pb-2 flex items-center gap-2">
+            🏆 Certifications & Leadership
+          </h3>
+          <div className="space-y-4">
+            {professionalLinks.map((link, idx) => (
+              <a 
+                key={idx}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-3 rounded-xl bg-white/40 hover:bg-white/60 border border-white/20 transition-all group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className={`w-8 h-8 rounded-full ${link.bg} flex items-center justify-center ${link.color}`}>
+                    <link.icon className="w-4 h-4" />
+                  </div>
+                  <span className="text-sm font-medium text-gray-800">{link.label}</span>
+                </div>
+                <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
             ))}
           </div>
         </motion.div>

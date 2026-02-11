@@ -60,20 +60,6 @@ export const userData = {
       color: "bg-blue-600"
     },
     {
-      id: "credly",
-      label: "My Professional Certifications",
-      url: "https://www.credly.com/users/ramakanth-vr/badges",
-      icon: Globe,
-      color: "bg-orange-500"
-    },
-    {
-      id: "governing-body",
-      label: "BVRIT Governing Body Profile",
-      url: "https://bvrit.ac.in/governing-body/?fbclid=IwAR0OouuLeFWW5I-67AdYMbWf2DXyEElSArzN4yAHvvPbFXvvUgUzO-",
-      icon: User,
-      color: "bg-emerald-600"
-    },
-    {
       id: "whatsapp",
       label: "WhatsApp Me",
       url: "https://wa.me/919880766321",
