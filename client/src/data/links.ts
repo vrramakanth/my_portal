@@ -53,34 +53,6 @@ export const userData = {
       color: "bg-black"
     },
     {
-      id: "talk-ai",
-      label: "Talk on Thriving in the Age of AI",
-      url: "https://alumni.srivishnu.edu.in/newsroom/news/Talk-on-Thriving-in-the-Age-of-AI-by-BVRIT-Alumnus-Mr-Ramakanth-V-R",
-      icon: Youtube,
-      color: "bg-red-500"
-    },
-    {
-      id: "youtube-1",
-      label: "Watch on YouTube (Session 1)",
-      url: "https://youtu.be/b8f_KQBu5p8?si=hORA5ly3cYSq753U",
-      icon: Youtube,
-      color: "bg-red-600"
-    },
-    {
-      id: "youtube-2",
-      label: "Watch on YouTube (Session 2)",
-      url: "https://youtu.be/aDK61PGKdY?si=6dY5OFuruwtRNUKr",
-      icon: Youtube,
-      color: "bg-red-600"
-    },
-    {
-      id: "youtube-3",
-      label: "Watch on YouTube (Session 3)",
-      url: "https://youtu.be/MqDwm5mUWGU?si=KqLYFUtm1ZxwtcOQ",
-      icon: Youtube,
-      color: "bg-red-600"
-    },
-    {
       id: "patents",
       label: "View Patents & Assignments",
       url: "https://assignmentcenter.uspto.gov/search/patent/assigneeAssignorDetails%3FexactAssignorName%3DRANGA,%20RAMAKANTH%20VENGETA",

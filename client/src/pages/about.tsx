@@ -2,9 +2,28 @@ import { userData } from "@/data/links";
 import { ProfileCard } from "@/components/profile-card";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Youtube, ExternalLink } from "lucide-react";
 
 export default function About() {
+  const mediaLinks = [
+    {
+      label: "Talk on Thriving in the Age of AI",
+      url: "https://alumni.srivishnu.edu.in/newsroom/news/Talk-on-Thriving-in-the-Age-of-AI-by-BVRIT-Alumnus-Mr-Ramakanth-V-R"
+    },
+    {
+      label: "Watch on YouTube (Session 1)",
+      url: "https://youtu.be/b8f_KQBu5p8?si=hORA5ly3cYSq753U"
+    },
+    {
+      label: "Watch on YouTube (Session 2)",
+      url: "https://youtu.be/aDK61PGKdY?si=6dY5OFuruwtRNUKr"
+    },
+    {
+      label: "Watch on YouTube (Session 3)",
+      url: "https://youtu.be/MqDwm5mUWGU?si=KqLYFUtm1ZxwtcOQ"
+    }
+  ];
+
   return (
     <div className="min-h-screen w-full flex justify-center py-12 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
       {/* Background Decor */}
@@ -16,7 +35,7 @@ export default function About() {
           <motion.button
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-8 font-medium transition-colors"
+            className="flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-8 font-medium transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Links
@@ -54,8 +73,31 @@ export default function About() {
           <h3 className="text-gray-900 font-bold mb-6 uppercase tracking-wider text-xs border-b border-white/20 pb-2 flex items-center gap-2">
             📰 In Media
           </h3>
+
+          <div className="space-y-4 mb-8">
+            <h4 className="text-gray-600 font-semibold text-xs uppercase tracking-widest mb-3">Featured Talks & Videos</h4>
+            {mediaLinks.map((link, idx) => (
+              <a 
+                key={idx}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-3 rounded-xl bg-white/40 hover:bg-white/60 border border-white/20 transition-all group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600">
+                    <Youtube className="w-4 h-4" />
+                  </div>
+                  <span className="text-sm font-medium text-gray-800">{link.label}</span>
+                </div>
+                <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 gap-6">
             <div className="space-y-4">
+              <h4 className="text-gray-600 font-semibold text-xs uppercase tracking-widest mb-3">Press Coverage</h4>
               <img src="/media-1.jpg" alt="Media Coverage" className="w-full rounded-xl shadow-md border border-white/20" />
               <img src="/media-2.jpg" alt="Media Coverage" className="w-full rounded-xl shadow-md border border-white/20" />
               <img src="/media-3.jpg" alt="Media Coverage" className="w-full rounded-xl shadow-md border border-white/20" />
