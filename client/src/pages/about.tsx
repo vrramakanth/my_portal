@@ -188,7 +188,7 @@ export default function About() {
           transition={{ delay: 0.8 }}
           className="mt-12 text-center text-gray-400 text-sm"
         >
-          <p>© 2024 Ramakanth V R</p>
+          <p>© 2025 Ramakanth V R</p>
         </motion.footer>
       </div>
     </div>
