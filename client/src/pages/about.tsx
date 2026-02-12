@@ -12,17 +12,17 @@ export default function About() {
       id: "ai-talk"
     },
     {
-      label: "BVRIT Alumni Talk: Thriving in the Age of AI",
+      label: "MyGate Webinar : Setting up Rooftop Solar Power in Gated Communities",
       url: "https://youtu.be/bBf_KQBu5p8",
       videoId: "bBf_KQBu5p8"
     },
     {
-      label: "Leveraging AI for Career Growth",
+      label: "MyGate Webinar : Operationalizing Usage based Water billing",
       url: "https://www.youtube.com/watch?v=aDK61PGKxIY&t=10s",
       videoId: "aDK61PGKxIY"
     },
     {
-      label: "AI, Technology & Engineering Future",
+      label: "MyGate Webinar : Setting up effective waste management system",
       url: "https://youtu.be/MqDwm5mUWGU?si=KqLYFUtm1ZxwtcOQ",
       videoId: "MqDwm5mUWGU"
     }
