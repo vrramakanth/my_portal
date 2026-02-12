@@ -12,17 +12,17 @@ export default function About() {
       id: "ai-talk"
     },
     {
-      label: "Thriving in the Age of AI (Full Session)",
+      label: "BVRIT Alumni Talk: Thriving in the Age of AI",
       url: "https://youtu.be/bBf_KQBu5p8",
       videoId: "bBf_KQBu5p8"
     },
     {
-      label: "AI Strategy & Implementation (Highlights)",
+      label: "Leveraging AI for Career Growth",
       url: "https://www.youtube.com/watch?v=aDK61PGKxIY&t=10s",
       videoId: "aDK61PGKxIY"
     },
     {
-      label: "Q&A: Future of Engineering in AI Era",
+      label: "AI, Technology & Engineering Future",
       url: "https://youtu.be/MqDwm5mUWGU?si=KqLYFUtm1ZxwtcOQ",
       videoId: "MqDwm5mUWGU"
     }
