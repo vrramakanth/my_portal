@@ -12,17 +12,17 @@ export default function About() {
       id: "ai-talk"
     },
     {
-      label: "Watch on YouTube (Session 1)",
-      url: "https://youtu.be/b8f_KQBu5p8?si=hORA5ly3cYSq753U",
-      videoId: "b8f_KQBu5p8"
+      label: "Thriving in the Age of AI (Full Session)",
+      url: "https://youtu.be/bBf_KQBu5p8",
+      videoId: "bBf_KQBu5p8"
     },
     {
-      label: "Watch on YouTube (Session 2)",
-      url: "https://youtu.be/aDK61PGKdY?si=6dY5OFuruwtRNUKr",
-      videoId: "aDK61PGKdY"
+      label: "AI Strategy & Implementation (Highlights)",
+      url: "https://www.youtube.com/watch?v=aDK61PGKxIY&t=10s",
+      videoId: "aDK61PGKxIY"
     },
     {
-      label: "Watch on YouTube (Session 3)",
+      label: "Q&A: Future of Engineering in AI Era",
       url: "https://youtu.be/MqDwm5mUWGU?si=KqLYFUtm1ZxwtcOQ",
       videoId: "MqDwm5mUWGU"
     }
