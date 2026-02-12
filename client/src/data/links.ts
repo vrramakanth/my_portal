@@ -53,13 +53,6 @@ export const userData = {
       color: "bg-black"
     },
     {
-      id: "patents",
-      label: "View Patents & Assignments",
-      url: "https://assignmentcenter.uspto.gov/search/patent/assigneeAssignorDetails%3FexactAssignorName%3DRANGA,%20RAMAKANTH%20VENGETA",
-      icon: Globe,
-      color: "bg-blue-600"
-    },
-    {
       id: "whatsapp",
       label: "WhatsApp Me",
       url: "https://wa.me/919880766321",

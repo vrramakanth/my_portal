@@ -2,29 +2,40 @@ import { userData } from "@/data/links";
 import { ProfileCard } from "@/components/profile-card";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowLeft, Youtube, ExternalLink, Award, Landmark } from "lucide-react";
+import { ArrowLeft, Youtube, ExternalLink, Award, Landmark, FileText } from "lucide-react";
 
 export default function About() {
   const mediaLinks = [
     {
       label: "Talk on Thriving in the Age of AI",
-      url: "https://alumni.srivishnu.edu.in/newsroom/news/Talk-on-Thriving-in-the-Age-of-AI-by-BVRIT-Alumnus-Mr-Ramakanth-V-R"
+      url: "https://alumni.srivishnu.edu.in/newsroom/news/Talk-on-Thriving-in-the-Age-of-AI-by-BVRIT-Alumnus-Mr-Ramakanth-V-R",
+      id: "ai-talk"
     },
     {
       label: "Watch on YouTube (Session 1)",
-      url: "https://youtu.be/b8f_KQBu5p8?si=hORA5ly3cYSq753U"
+      url: "https://youtu.be/b8f_KQBu5p8?si=hORA5ly3cYSq753U",
+      videoId: "b8f_KQBu5p8"
     },
     {
       label: "Watch on YouTube (Session 2)",
-      url: "https://youtu.be/aDK61PGKdY?si=6dY5OFuruwtRNUKr"
+      url: "https://youtu.be/aDK61PGKdY?si=6dY5OFuruwtRNUKr",
+      videoId: "aDK61PGKdY"
     },
     {
       label: "Watch on YouTube (Session 3)",
-      url: "https://youtu.be/MqDwm5mUWGU?si=KqLYFUtm1ZxwtcOQ"
+      url: "https://youtu.be/MqDwm5mUWGU?si=KqLYFUtm1ZxwtcOQ",
+      videoId: "MqDwm5mUWGU"
     }
   ];
 
   const professionalLinks = [
+    {
+      label: "US Patent: US20090257628",
+      url: "https://patents.google.com/patent/US20090257628",
+      icon: FileText,
+      color: "text-blue-600",
+      bg: "bg-blue-50"
+    },
     {
       label: "My Professional Certifications",
       url: "https://www.credly.com/users/ramakanth-vr/badges",
@@ -88,7 +99,7 @@ export default function About() {
           className="mt-8 p-6 glass-panel rounded-3xl border-white/40 shadow-xl"
         >
           <h3 className="text-gray-900 font-bold mb-6 uppercase tracking-wider text-xs border-b border-white/20 pb-2 flex items-center gap-2">
-            🏆 Certifications & Leadership
+            🏆 Patents, Certs & Leadership
           </h3>
           <div className="space-y-4">
             {professionalLinks.map((link, idx) => (
@@ -121,24 +132,41 @@ export default function About() {
             📰 In Media
           </h3>
 
-          <div className="space-y-4 mb-8">
+          <div className="space-y-6 mb-8">
             <h4 className="text-gray-600 font-semibold text-xs uppercase tracking-widest mb-3">Featured Talks & Videos</h4>
             {mediaLinks.map((link, idx) => (
-              <a 
-                key={idx}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between p-3 rounded-xl bg-white/40 hover:bg-white/60 border border-white/20 transition-all group"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600">
-                    <Youtube className="w-4 h-4" />
+              <div key={idx} className="space-y-2">
+                <p className="text-sm font-medium text-gray-800 px-1">{link.label}</p>
+                {link.videoId ? (
+                  <div className="relative aspect-video rounded-xl overflow-hidden shadow-md border border-white/20 bg-black/5">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={`https://www.youtube.com/embed/${link.videoId}`}
+                      title={link.label}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="absolute inset-0"
+                    ></iframe>
                   </div>
-                  <span className="text-sm font-medium text-gray-800">{link.label}</span>
-                </div>
-                <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
+                ) : (
+                  <a 
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between p-3 rounded-xl bg-white/40 hover:bg-white/60 border border-white/20 transition-all group"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600">
+                        <Youtube className="w-4 h-4" />
+                      </div>
+                      <span className="text-xs text-gray-500 italic">View Article Preview</span>
+                    </div>
+                    <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </a>
+                )}
+              </div>
             ))}
           </div>
 
