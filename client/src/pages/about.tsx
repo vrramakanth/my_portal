@@ -86,6 +86,13 @@ export default function About() {
             ✨ About Me
           </h3>
           <div className="space-y-6">
+            <div className="mb-6">
+              <img 
+                src="/office_desk.png" 
+                alt="Professional Workspace" 
+                className="w-full rounded-2xl shadow-lg border border-white/20 object-cover aspect-[4/3]"
+              />
+            </div>
             {userData.aboutMe.split('\n\n').map((para, i) => (
               <p key={i} className="text-base text-gray-700 leading-relaxed">{para}</p>
             ))}
