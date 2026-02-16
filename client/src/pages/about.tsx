@@ -156,6 +156,34 @@ export default function About() {
               </div>
             </div>
           </div>
+
+          <div className="space-y-6 mt-10">
+            <h4 className="text-gray-600 font-semibold text-xs uppercase tracking-widest mb-3 px-1">Speaking Engagements</h4>
+            <div className="space-y-4">
+              <div className="relative group">
+                <img 
+                  src="/talk_physics_1.jpg" 
+                  alt="Talk on Physics in Medicine at MVJ Engineering College" 
+                  className="w-full rounded-2xl shadow-md border border-white/20 object-cover"
+                />
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
+                  <p className="text-white text-xs font-bold uppercase tracking-wider">Physics in Medicine</p>
+                  <p className="text-white/80 text-[10px] mt-0.5">Guest Lecture at MVJ Engineering College</p>
+                </div>
+              </div>
+              <div className="relative group">
+                <img 
+                  src="/talk_physics_2.jpg" 
+                  alt="Physics in Medicine Presentation" 
+                  className="w-full rounded-2xl shadow-md border border-white/20 object-cover"
+                />
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
+                  <p className="text-white text-xs font-bold uppercase tracking-wider">MVJ Engineering College</p>
+                  <p className="text-white/80 text-[10px] mt-0.5">Expert Session on Healthcare Technology</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </motion.div>
 
         <motion.div
