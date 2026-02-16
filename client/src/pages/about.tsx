@@ -7,26 +7,26 @@ import { ArrowLeft, Youtube, ExternalLink, Award, Landmark, FileText } from "luc
 export default function About() {
   const mediaLinks = [
     {
-      label: "Talk on Thriving in the Age of AI",
-      url: "https://alumni.srivishnu.edu.in/newsroom/news/Talk-on-Thriving-in-the-Age-of-AI-by-BVRIT-Alumnus-Mr-Ramakanth-V-R",
-      id: "ai-talk"
-    },
-    {
-      label: "MyGate Webinar : Setting up Rooftop Solar Power in Gated Communities",
+      label: "BVRIT Alumni Talk: Thriving in the Age of AI",
       url: "https://youtu.be/bBf_KQBu5p8",
       videoId: "bBf_KQBu5p8"
     },
     {
-      label: "MyGate Webinar : Operationalizing Usage based Water billing",
+      label: "Leveraging AI for Career Growth",
       url: "https://www.youtube.com/watch?v=aDK61PGKxIY&t=10s",
       videoId: "aDK61PGKxIY"
     },
     {
-      label: "MyGate Webinar : Setting up effective waste management system",
+      label: "AI, Technology & Engineering Future",
       url: "https://youtu.be/MqDwm5mUWGU?si=KqLYFUtm1ZxwtcOQ",
       videoId: "MqDwm5mUWGU"
     }
   ];
+
+  const talkPreview = {
+    label: "Talk on Thriving in the Age of AI",
+    url: "https://alumni.srivishnu.edu.in/newsroom/news/Talk-on-Thriving-in-the-Age-of-AI-by-BVRIT-Alumnus-Mr-Ramakanth-V-R",
+  };
 
   const professionalLinks = [
     {
@@ -160,6 +160,25 @@ export default function About() {
           <div className="space-y-6 mt-10">
             <h4 className="text-gray-600 font-semibold text-xs uppercase tracking-widest mb-3 px-1">Speaking Engagements</h4>
             <div className="space-y-4">
+              <div className="relative group">
+                <img 
+                  src="/bvrit_talk.png" 
+                  alt="Future-Ready: Thriving in the Age of AI" 
+                  className="w-full rounded-2xl shadow-md border border-white/20 object-cover"
+                />
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
+                  <p className="text-white text-xs font-bold uppercase tracking-wider">Thriving in the Age of AI</p>
+                  <p className="text-white/80 text-[10px] mt-0.5">BVRIT Alumni Talk | Auditorium Session</p>
+                  <a 
+                    href={talkPreview.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 flex items-center gap-1 text-[10px] text-blue-300 hover:text-blue-200 transition-colors font-medium"
+                  >
+                    View Article Preview <ExternalLink className="w-2 h-2" />
+                  </a>
+                </div>
+              </div>
               <div className="relative group">
                 <img 
                   src="/talk_physics_1.jpg" 
