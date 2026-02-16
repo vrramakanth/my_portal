@@ -108,7 +108,8 @@ export default function About() {
           <h3 className="text-gray-900 font-bold mb-6 uppercase tracking-wider text-xs border-b border-white/20 pb-2 flex items-center gap-2">
             🏆 Patents, Certs & Leadership
           </h3>
-          <div className="space-y-4">
+          
+          <div className="space-y-4 mb-8">
             {professionalLinks.map((link, idx) => (
               <a 
                 key={idx}
@@ -126,6 +127,34 @@ export default function About() {
                 <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
             ))}
+          </div>
+
+          <div className="space-y-6">
+            <h4 className="text-gray-600 font-semibold text-xs uppercase tracking-widest mb-3 px-1">Academic Achievements</h4>
+            <div className="space-y-4">
+              <div className="relative group">
+                <img 
+                  src="/gold_medal.jpg" 
+                  alt="XLRI Gold Medal 2013" 
+                  className="w-full rounded-2xl shadow-md border border-white/20 object-cover"
+                />
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
+                  <p className="text-white text-xs font-bold uppercase tracking-wider">XLRI Gold Medalist (2013)</p>
+                  <p className="text-white/80 text-[10px] mt-0.5">Recognized for outstanding academic performance at XLRI Jamshedpur</p>
+                </div>
+              </div>
+              <div className="relative group">
+                <img 
+                  src="/convo.jpg" 
+                  alt="Convocation Ceremony" 
+                  className="w-full rounded-2xl shadow-md border border-white/20 object-cover"
+                />
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
+                  <p className="text-white text-xs font-bold uppercase tracking-wider">Convocation Ceremony</p>
+                  <p className="text-white/80 text-[10px] mt-0.5">Celebrating professional milestones with the XLRI cohort</p>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
 
