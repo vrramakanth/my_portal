@@ -88,7 +88,7 @@ export default function About() {
           <div className="space-y-6">
             <div className="mb-6">
               <img 
-                src="/office_desk.png" 
+                src="/career_start.png" 
                 alt="Professional Workspace" 
                 className="w-full rounded-2xl shadow-lg border border-white/20 object-cover aspect-[4/3]"
               />
@@ -188,17 +188,6 @@ export default function About() {
                 <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
                   <p className="text-white text-xs font-bold uppercase tracking-wider">Physics in Medicine</p>
                   <p className="text-white/80 text-[10px] mt-0.5">Guest Lecture at MVJ Engineering College</p>
-                </div>
-              </div>
-              <div className="relative group">
-                <img 
-                  src="/talk_physics_2.jpg" 
-                  alt="Physics in Medicine Presentation" 
-                  className="w-full rounded-2xl shadow-md border border-white/20 object-cover"
-                />
-                <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
-                  <p className="text-white text-xs font-bold uppercase tracking-wider">MVJ Engineering College</p>
-                  <p className="text-white/80 text-[10px] mt-0.5">Expert Session on Healthcare Technology</p>
                 </div>
               </div>
             </div>
