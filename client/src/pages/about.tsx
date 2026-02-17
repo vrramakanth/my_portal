@@ -158,7 +158,7 @@ export default function About() {
           </div>
 
           <div className="space-y-6 mt-10">
-            <h4 className="text-gray-600 font-semibold text-xs uppercase tracking-widest mb-3 px-1">Speaking Engagements</h4>
+            <h4 className="text-gray-600 font-semibold text-xs uppercase tracking-widest mb-3 px-1">Speaking & Presentations</h4>
             <div className="space-y-4">
               <div className="relative group">
                 <img 
@@ -179,6 +179,32 @@ export default function About() {
                   </a>
                 </div>
               </div>
+
+              {/* Poster Presentations */}
+              <div className="relative group">
+                <img 
+                  src="/poster_1.jpg" 
+                  alt="HCT-I Tech Symposium Poster" 
+                  className="w-full rounded-2xl shadow-md border border-white/20 object-cover"
+                />
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
+                  <p className="text-white text-xs font-bold uppercase tracking-wider">Tech Symposium Presentation</p>
+                  <p className="text-white/80 text-[10px] mt-0.5">Showcasing innovation in medical imaging and AI-driven diagnostics at the HCT-I Symposium.</p>
+                </div>
+              </div>
+
+              <div className="relative group">
+                <img 
+                  src="/poster_2.jpg" 
+                  alt="Process Simplification Poster" 
+                  className="w-full rounded-2xl shadow-md border border-white/20 object-cover"
+                />
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
+                  <p className="text-white text-xs font-bold uppercase tracking-wider">MR/AW Design Transfers</p>
+                  <p className="text-white/80 text-[10px] mt-0.5">Presenting strategies for process simplification and operational excellence in medical device design.</p>
+                </div>
+              </div>
+
               <div className="relative group">
                 <img 
                   src="/talk_physics_1.jpg" 
