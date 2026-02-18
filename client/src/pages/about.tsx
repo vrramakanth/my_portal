@@ -180,6 +180,18 @@ export default function About() {
                 </div>
               </div>
 
+              <div className="relative group">
+                <img 
+                  src="/talk_physics_1.jpg" 
+                  alt="Talk on Physics in Medicine at MVJ Engineering College" 
+                  className="w-full rounded-2xl shadow-md border border-white/20 object-cover"
+                />
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
+                  <p className="text-white text-xs font-bold uppercase tracking-wider">Physics in Medicine</p>
+                  <p className="text-white/80 text-[10px] mt-0.5">Guest Lecture at MVJ Engineering College</p>
+                </div>
+              </div>
+
               {/* Poster Presentations */}
               <div className="relative group">
                 <img 
@@ -189,7 +201,7 @@ export default function About() {
                 />
                 <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
                   <p className="text-white text-xs font-bold uppercase tracking-wider">Tech Symposium Presentation</p>
-                  <p className="text-white/80 text-[10px] mt-0.5">Showcasing innovation in medical imaging and AI-driven diagnostics at the HCT-I Symposium.</p>
+                  <p className="text-white/80 text-[10px] mt-0.5">Showcasing innovation in medical imaging and smart automated diagnostics at the HCT-I Symposium.</p>
                 </div>
               </div>
 
@@ -202,18 +214,6 @@ export default function About() {
                 <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
                   <p className="text-white text-xs font-bold uppercase tracking-wider">MR/AW Design Transfers</p>
                   <p className="text-white/80 text-[10px] mt-0.5">Presenting strategies for process simplification and operational excellence in medical device design.</p>
-                </div>
-              </div>
-
-              <div className="relative group">
-                <img 
-                  src="/talk_physics_1.jpg" 
-                  alt="Talk on Physics in Medicine at MVJ Engineering College" 
-                  className="w-full rounded-2xl shadow-md border border-white/20 object-cover"
-                />
-                <div className="absolute bottom-3 left-3 right-3 p-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10">
-                  <p className="text-white text-xs font-bold uppercase tracking-wider">Physics in Medicine</p>
-                  <p className="text-white/80 text-[10px] mt-0.5">Guest Lecture at MVJ Engineering College</p>
                 </div>
               </div>
             </div>
