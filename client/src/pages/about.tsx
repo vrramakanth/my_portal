@@ -158,7 +158,7 @@ export default function About() {
           </div>
 
           <div className="space-y-6 mt-10">
-            <h4 className="text-gray-600 font-semibold text-xs uppercase tracking-widest mb-3 px-1">Speaking & Presentations</h4>
+            <h4 className="text-gray-600 font-semibold text-xs uppercase tracking-widest mb-3 px-1">Conferences & Presentations</h4>
             <div className="space-y-4">
               <div className="relative group">
                 <img 
