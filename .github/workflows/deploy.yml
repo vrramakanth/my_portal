@@ -32,4 +32,4 @@ jobs:
           username: ${{ secrets.MY_PORTAL_FTP_USERNAME }}
           password: ${{ secrets.MY_PORTAL_FTP_PASSWORD }}
           local-dir: ./dist/public/
-          server-dir: ./public_html/
+          server-dir: ./
