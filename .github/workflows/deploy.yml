@@ -28,8 +28,8 @@ jobs:
       - name: Deploy to GoDaddy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.MYPORTAL_FTP_SERVER }}
+          username: ${{ secrets.MY_PORTAL_FTP_USERNAME }}
+          password: ${{ secrets.MY_PORTAL_FTP_PASSWORD }}
           local-dir: ./dist/public/
           server-dir: ./public_html/
