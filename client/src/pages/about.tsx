@@ -37,7 +37,7 @@ export default function About() {
       bg: "bg-blue-50"
     },
     {
-      label: "My Professional Certifications",
+      label: "My Recent Certifications",
       url: "https://www.credly.com/users/ramakanth-vr/badges",
       icon: Award,
       color: "text-orange-500",
